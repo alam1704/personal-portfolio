@@ -11,6 +11,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 There is no test runner configured in this project yet.
 
+## Deployment
+
+Deployed to Cloudflare Pages via its Git integration (no `wrangler.toml` or GitHub Actions in this repo) — a push to `main` triggers an automatic build. Production branch `main`, build command `npm run build`, output directory `dist`, no environment variables set.
+
 ## Architecture
 
 - React 19 + TypeScript, built with Vite, routed with TanStack Router (`@tanstack/react-router`), styled with Tailwind CSS v4 via the `@tailwindcss/vite` plugin (no standalone `tailwind.config` file).
