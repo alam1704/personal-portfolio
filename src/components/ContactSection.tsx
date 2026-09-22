@@ -1,11 +1,6 @@
-import { GitBranch, Link, Mail } from "lucide-react";
+import { GitBranch, Link } from "lucide-react";
 
 const contactLinks = [
-  // {
-  //   label: "alexlam1994@live.com",
-  //   href: "mailto:alexlam1994@live.com",
-  //   icon: Mail,
-  // },
   {
     label: "linkedin.com/in/alexlam94",
     href: "https://www.linkedin.com/in/alexlam94/",
