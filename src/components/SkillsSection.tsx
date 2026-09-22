@@ -1,7 +1,16 @@
 const skillCategories = [
   {
     title: "Languages & Frameworks",
-    skills: ["C#", ".NET Framework 4.8", ".NET 8", ".NET 10", "TypeScript", "React"],
+    skills: [
+      "C#",
+      ".NET Framework 4.8",
+      ".NET 8",
+      ".NET 10",
+      "WPF (XAML)",
+      "Windows Services",
+      "TypeScript",
+      "React",
+    ],
   },
   {
     title: "APIs & Protocols",
@@ -10,12 +19,13 @@ const skillCategories = [
       "AWS API Gateway",
       "Third-Party Integrations (PBS, MIMS, ERX)",
       "ActiveX / TCP-IP (PCEFTPOS)",
+      "WCF",
       "Model Context Protocol (MCP)",
     ],
   },
   {
     title: "Databases",
-    skills: ["Microsoft SQL Server (SSMS)", "MySQL (Workbench)"],
+    skills: ["Microsoft SQL Server (SSMS)", "MySQL (Workbench)", "Dapper"],
   },
   {
     title: "Cloud & DevOps",
@@ -23,11 +33,29 @@ const skillCategories = [
   },
   {
     title: "Tools & Version Control",
-    skills: ["Visual Studio 2026", "VS Code", "Bitbucket", "SourceTree", "npm"],
+    skills: [
+      "Visual Studio 2026",
+      "VS Code",
+      "Bitbucket",
+      "SourceTree",
+      "Git Submodules",
+      "npm",
+    ],
+  },
+  {
+    title: "Testing",
+    skills: ["NUnit", "Moq"],
   },
   {
     title: "AI & Agentic Development",
-    skills: ["GitHub Copilot", "Claude Code (Agents, Skills, Plans)", "AI-Assisted Development"],
+    skills: [
+      "GitHub Copilot",
+      "GitHub Copilot CLI",
+      "Claude Code (Agents, Skills, Plans)",
+      "Agent Configuration (CLAUDE.md, Rules, Slash Commands)",
+      "Context Engineering",
+      "AI-Assisted Development",
+    ],
   },
   {
     title: "Reporting",
