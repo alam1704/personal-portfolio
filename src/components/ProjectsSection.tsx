@@ -4,17 +4,23 @@ type Project = {
   title: string;
   description: string;
   tech: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
 };
 
 const projects: Project[] = [
   {
-    title: "MSSQL MCP Server",
+    title: "SQL MCP Server",
     description:
-      "An MCP server connecting GitHub Copilot to a local SQL Server instance, enabling AI-assisted queries against table schemas and structure via a connection string.",
-    tech: ["C#", ".NET", "MSSQL", "MCP"],
+      "A C#/.NET 8 Model Context Protocol server that gives GitHub Copilot read-only access to SQL Server metadata, with database discovery and per-request table/schema inspection across databases on the same server.",
+    tech: ["C#", ".NET 8", "SQL Server", "MCP", "GitHub Copilot"],
     githubUrl: "https://github.com/alam1704/sql-mcp",
+  },
+  {
+    title: "LaunchDarkly Release-Flag Integration",
+    description:
+      "Integrated a LaunchDarkly release flag into an annual data-maintenance workflow in a legacy .NET/WPF business application. Initialized flags before startup processing and gated the new cleanup path using store context for controlled rollout.",
+    tech: [".NET Framework", "WPF", "LaunchDarkly", "Feature Flags", "SQL Server"],
   },
   {
     title: "Personal Portfolio",
@@ -65,26 +71,30 @@ export const ProjectsSection = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4">
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-1 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
-                >
-                  <GitBranch className="h-4 w-4" /> Code
-                </a>
-                {project.liveUrl && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <ExternalLink className="h-4 w-4" /> Live
-                  </a>
-                )}
-              </div>
+              {(project.githubUrl || project.liveUrl) && (
+                <div className="flex gap-4">
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <GitBranch className="h-4 w-4" /> Code
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink className="h-4 w-4" /> Live
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>

@@ -2,6 +2,8 @@
 
 Alex Lam's personal portfolio site — full-stack developer & registered pharmacist, showcasing background, skills, and projects.
 
+The project-focused CV is available in [CV.md](CV.md).
+
 ## Tech Stack
 
 - React 19 + TypeScript

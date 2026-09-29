@@ -26,8 +26,13 @@ export const AboutSection = () => {
               {" "}
               Get In Touch
             </a>
-            <a className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-              Download CV
+            <a
+              href="https://github.com/alam1704/personal-portfolio/blob/main/CV.md"
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+            >
+              View CV
             </a>
           </div>
         </div>

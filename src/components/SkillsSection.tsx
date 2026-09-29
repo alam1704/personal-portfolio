@@ -7,6 +7,7 @@ const skillCategories = [
       ".NET 8",
       ".NET 10",
       "WPF (XAML)",
+      "WPF vector UI (DataTemplates, Viewbox, Canvas, Path)",
       "Windows Services",
       "TypeScript",
       "React",
@@ -25,11 +26,23 @@ const skillCategories = [
   },
   {
     title: "Databases",
-    skills: ["Microsoft SQL Server (SSMS)", "MySQL (Workbench)", "Dapper"],
+    skills: [
+      "Microsoft SQL Server (SSMS)",
+      "Microsoft.Data.SqlClient",
+      "MySQL (Workbench)",
+      "Dapper",
+    ],
   },
   {
     title: "Cloud & DevOps",
-    skills: ["AWS Lambda (.NET)", "CloudWatch", "IAM / Policies", "AWS IoT", "TeamCity"],
+    skills: [
+      "AWS Lambda (.NET)",
+      "CloudWatch",
+      "IAM / Policies",
+      "AWS IoT",
+      "TeamCity",
+      "LaunchDarkly",
+    ],
   },
   {
     title: "Tools & Version Control",
@@ -55,6 +68,7 @@ const skillCategories = [
       "Agent Configuration (CLAUDE.md, Rules, Slash Commands)",
       "Context Engineering",
       "AI-Assisted Development",
+      "Codebase-Grounded Task Estimation",
     ],
   },
   {
