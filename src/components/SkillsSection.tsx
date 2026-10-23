@@ -65,6 +65,7 @@ const skillCategories = [
       "GitHub Copilot",
       "GitHub Copilot CLI",
       "Claude Code (Agents, Skills, Plans)",
+      "Claude Code Plugins",
       "Agent Configuration (CLAUDE.md, Rules, Slash Commands)",
       "Context Engineering",
       "AI-Assisted Development",
