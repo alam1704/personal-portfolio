@@ -9,6 +9,7 @@ const skillCategories = [
       "WPF (XAML)",
       "WPF vector UI (DataTemplates, Viewbox, Canvas, Path)",
       "Windows Services",
+      "log4net",
       "TypeScript",
       "React",
     ],
@@ -41,6 +42,8 @@ const skillCategories = [
       "IAM / Policies",
       "AWS IoT",
       "TeamCity",
+      "GitHub Actions",
+      "CI/CD automation",
       "LaunchDarkly",
     ],
   },
@@ -57,7 +60,7 @@ const skillCategories = [
   },
   {
     title: "Testing",
-    skills: ["NUnit", "Moq"],
+    skills: ["NUnit", "xUnit", "Moq"],
   },
   {
     title: "AI & Agentic Development",

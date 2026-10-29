@@ -20,13 +20,13 @@ supports real-world workflows.
 
 - **Languages and frameworks:** C#, .NET Framework 4.8, .NET 8, .NET 10,
   WPF (XAML, vector UI with DataTemplates, Viewbox, Canvas, and Path),
-  Windows Services, TypeScript, React
+  Windows Services, log4net, TypeScript, React
 - **APIs and protocols:** REST APIs, AWS API Gateway, WCF, Model Context
   Protocol (MCP), ActiveX/TCP-IP integrations, PBS, MIMS, and ERX
 - **Databases:** Microsoft SQL Server, MySQL, Dapper, Microsoft.Data.SqlClient
 - **Cloud and DevOps:** AWS Lambda, Amazon S3, CloudWatch, IAM, AWS IoT,
-  TeamCity, Cloudflare Pages, LaunchDarkly
-- **Testing and quality:** NUnit, Moq, metadata-only database access, secure
+  TeamCity, GitHub Actions, CI/CD automation, Cloudflare Pages, LaunchDarkly
+- **Testing and quality:** NUnit, xUnit, Moq, metadata-only database access, secure
   connection-string configuration
 - **Tools and AI-assisted development:** GitHub Copilot, GitHub Copilot CLI,
   Claude Code, Git, Bitbucket, SourceTree, npm
@@ -48,11 +48,13 @@ SQL Server, GitHub Copilot CLI
 ### LaunchDarkly Release-Flag Integration
 
 Integrated a LaunchDarkly release flag into an annual data-maintenance workflow
-in a legacy .NET/WPF business application. Initialized flags before startup
-processing and gated the new cleanup path using store context for controlled
-rollout.
+in a legacy .NET/WPF business application. Initialized flags before startup and
+used store context for controlled rollout. The flag gates deceased-patient
+removal, applicant updates, and empty-family deletion while existing SN/CN and
+outside-PRF resets remain unchanged. Also isolated EOY logging from unrelated
+API request diagnostics.
 
-**Technologies:** C#, .NET Framework, WPF, LaunchDarkly, SQL Server
+**Technologies:** C#, .NET Framework, WPF, LaunchDarkly, log4net, SQL Server
 
 ### [Personal Portfolio](https://github.com/alam1704/personal-portfolio)
 

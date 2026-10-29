@@ -19,8 +19,8 @@ const projects: Project[] = [
   {
     title: "LaunchDarkly Release-Flag Integration",
     description:
-      "Integrated a LaunchDarkly release flag into an annual data-maintenance workflow in a legacy .NET/WPF business application. Initialized flags before startup processing and gated the new cleanup path using store context for controlled rollout.",
-    tech: [".NET Framework", "WPF", "LaunchDarkly", "Feature Flags", "SQL Server"],
+      "Integrated a LaunchDarkly release flag into an annual data-maintenance workflow in a legacy .NET/WPF business application. Initialized flags before startup and used store context for controlled rollout. The flag gates deceased-patient removal, applicant updates, and empty-family deletion while existing SN/CN and outside-PRF resets remain unchanged. Also isolated EOY logging from unrelated API request diagnostics.",
+    tech: [".NET Framework", "WPF", "LaunchDarkly", "Feature Flags", "log4net", "SQL Server"],
   },
   {
     title: "Personal Portfolio",
