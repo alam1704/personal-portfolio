@@ -18,9 +18,9 @@ supports real-world workflows.
 
 ## Technical Skills
 
-- **Languages and frameworks:** C#, .NET Framework 4.8, .NET 8, .NET 10,
+- **Languages and frameworks:** C#, TypeScript, React, .NET Framework 4.8, .NET 8, .NET 10,
   WPF (XAML, vector UI with DataTemplates, Viewbox, Canvas, and Path),
-  Windows Services, log4net, TypeScript, React
+  Windows Services, log4net
 - **APIs and protocols:** REST APIs, AWS API Gateway, WCF, Model Context
   Protocol (MCP), ActiveX/TCP-IP integrations, PBS, MIMS, and ERX
 - **Databases:** Microsoft SQL Server, MySQL, Dapper, Microsoft.Data.SqlClient
